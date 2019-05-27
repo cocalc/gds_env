@@ -115,7 +115,7 @@ USER $NB_UID
 
 RUN sed -i -e 's/\r$//' $HOME/install_gds_py.sh
 RUN ["/bin/bash", "-c", "$HOME/install_gds_py.sh"]
-RUN rm /home/jovyan/install_gds_py.sh 
+RUN rm $HOME/install_gds_py.sh 
 
 #--- Decktape ---#
 
